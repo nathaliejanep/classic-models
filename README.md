@@ -1,2 +1,3 @@
-# School assignment @Medieinstituet - Product catalog prototype
+# classic-models
+Product catalog prototype
 Built with Node.js, Express and MySql
