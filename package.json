@@ -1,0 +1,26 @@
+{
+  "name": "classicmodels-nathaliejanep",
+  "version": "1.0.0",
+  "description": "Template for classic models assignment",
+  "main": "app.js",
+  "scripts": {
+    "dev": "npx nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:ejs": "ejslint src/templates/some-template.ejs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H5-classroom/classicmodels-nathaliejanep.git"
+  },
+  "author": "Nathalie Persson Enriquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H5-classroom/classicmodels-nathaliejanep/issues"
+  },
+  "homepage": "https://github.com/H5-classroom/classicmodels-nathaliejanep#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3"
+  }
+}

@@ -1,0 +1,33 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="content">
+      <h2>CONTACT US</h2>
+      <% if (data[0].length > 0) {%> 
+        
+        <% data[0].forEach((office) => { %>
+            <div class="info">
+              <div class="address">
+                <h3><%= office.city %></h3>
+                  <p><%= office.addressLine1 %></p>
+                  <p><%= office.addressLine2 %></p>
+                  <a href="tel:<%= office.phone %>"><%= office.phone %></a>
+              </div>
+                <% data[1].forEach((employee) => { %> 
+
+                  <% if (office.officeCode === employee.officeCode) {%>
+                    <p><%= employee.jobTitle %>: <%= employee.firstName %> <%= employee.lastName %></p>
+                    <a href="mailto:<%= employee.email %>"><%= employee.email %></a>
+                <%}%>
+                
+                <%})%> 
+            </div>
+        <%})%> 
+      <%}%>
+
+ 
+    </div>
+  </body>
+</html>

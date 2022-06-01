@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="content">
+      <h2>All products</h2>
+      <% if (productlines.length>0){%> <% productlines.forEach(productline =>{
+        %>       
+        <div class="info">
+          <h3><%= productline.productLine %></h3>
+          <a href="/products/<%= productline.productLine %>" class="title" >
+            Check out our <%= productline.productLine %>
+          </a>
+
+          <p><%= productline.textDescription%></p>
+        </div>
+        <% }) %> <%}%>
+    </div>
+  </body>
+</html>
