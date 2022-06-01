@@ -1,2 +1,2 @@
-# h5-template-classicModels
-Template for classic models assignment
+# School assignment @Medieinstituet - Product catalog prototype
+Built with Node.js, Express and MySql
