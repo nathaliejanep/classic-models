@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
       console.log(err);
     }
 
-    // console.log('Result', result);
     let productlines = result;
     res.render('categories', { title: 'Categories', productlines });
   });

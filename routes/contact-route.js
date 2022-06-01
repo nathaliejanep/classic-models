@@ -4,11 +4,7 @@ var router = express.Router();
 // Kontaktsidan skall visa alla kontor med adress samt vilken personal med kontaktuppgifter arbetar på det kontoret.
 
 router.get('/', (req, res) => {
-  // SELECT * FROM offices
-
-  let sql = `
-  SELECT * FROM offices
-  `;
+  let sql = `SELECT * FROM offices`;
   let sqlEmp = `SELECT * FROM employees`;
 
   // SELECT offices.addressLine1, employees.firstName
